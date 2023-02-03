@@ -8,17 +8,19 @@ function terfogat() {
 //Date: 2023-02-03
 //Github: https://github.com/BalazsR2022/Beadando
 
-const form = document.querySelector('form');
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
+// const form = document.querySelector('form');
+// form.addEventListener("click", function(e) {
+//   e.preventDefault();   --------> Itt kellene meghívni a függvényeket és kiíratni a két mezőbe az eredményeket
+// });
   
-const sugar = document.querySelector('.form-control');
-const r = parseFloat(sugar.value);
+// const sugar = document.querySelector('.form-control');
+const sugar = document.getElementsByClassName('form-control');
+const pi = Math.PI;
+const r = Number(sugar.value);
 const Terfogat = szamitTerfogat(r);
 const Felszin = szamitFelszin(r);
 
-const pi = Math.PI;
+
 
 function szamitTerfogat(r) {
   return (4/3) * pi * Math.pow(r, 3);
