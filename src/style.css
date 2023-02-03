@@ -12,6 +12,14 @@ html {
     
 }
  
+.sugar {
+    width: 250px;
+    background-color:rgb(6, 18, 187);
+    padding: 6px;
+    margin: 30px;
+    text-shadow: 3px 3px 3px #222222;
+   
+}
 .container {
     width: 250px;
     background-color:rgb(6, 18, 187);
